@@ -19,7 +19,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showMessage(_ sender: UIButton) {
+        let reesesMessage1 = "You Got Chocolate in my Peanut Butter!"
+        let reesesMessage2 = "You got Peanut Butter in my Chocolate!"
         
+        if messageLabel.text == ""{
+            messageLabel.text = reesesMessage1
+        }else if messageLabel.text == reesesMessage1 {
+            messageLabel.text = reesesMessage2
+        }else{
+            messageLabel.text = ""
+        }
     }
     
 }
